@@ -1,0 +1,37 @@
+.container{
+    width: 90%;
+    margin: 50px auto;
+    background: #fefcf703;
+}
+.wrapper{
+    width: 100%;
+    margin: 50px auto;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__list{
+        display: flex;
+        gap: 33px;
+    }
+    &__link{
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.923077px;
+        text-transform: uppercase;
+        color: #83888F;  
+    }
+    &__create{
+        color: #333d4b;
+    }
+    &__link:hover{
+        cursor: pointer;
+        color: #333D4B;
+        transition: all 0.2s;
+    }
+}

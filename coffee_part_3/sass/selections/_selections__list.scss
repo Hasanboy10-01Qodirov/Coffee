@@ -1,0 +1,54 @@
+.list{
+    width: 37%;
+
+    &__item:not(.list__n-5){
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        mix-blend-mode: normal;
+        opacity: 0.4;
+
+        &:hover{
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+    }
+    &__number{ 
+        font-family: 'Fraunces 9pt';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 21px;
+        line-height: 30px;
+        color: #83888F;
+    }
+    &__num1{
+        color: #0E8784;
+    }
+    &__n-5{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        mix-blend-mode: normal;
+        opacity: 1;
+    }
+    &__link{
+        font-family: 'Fraunces 9pt';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 21px;
+        line-height: 30px;        
+        color: #333D4B;
+    }
+    &__line{
+        margin: 20px 0 18px;
+        width: 100%;
+        opacity: 0.25;
+        height: 1px;
+        background: #83888F;
+        mix-blend-mode: normal;
+        opacity: 0.25;
+    }
+    
+}

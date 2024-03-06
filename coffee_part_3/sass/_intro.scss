@@ -1,0 +1,31 @@
+.intro{
+    margin-top: 50px;
+    width: 100%;
+    background-image: url(./img/Bitmap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    padding: 110px 100px 130px;
+    &__box{
+        width: 40%;
+        // padding: 0 80px;
+        border-radius: 8px;
+    }
+    &__title{
+        font-family: 'Fraunces 9pt';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 35px;
+        color: #FEFCF7;
+    }
+    &__text{
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FEFCF7;
+    }
+}
