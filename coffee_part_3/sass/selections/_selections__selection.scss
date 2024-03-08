@@ -59,6 +59,18 @@
     background: #F4F1EB;
     border-radius: 8px;
 
+    &:hover{
+        background-color: #fdd6ba;
+    }
+    &:active{
+        background-color: #0e8784;
+        .ways__title{
+            color: #fff;
+        }
+        .ways__text{
+            color: #fefcf7;
+        }
+    }
     &__box{
         margin: 35px auto 85px;
         width: 74%;
@@ -82,17 +94,6 @@
         color: #333D4B;
     }
 }
-.ways-2_2{
-    background-color: #0e8784;
-
-    &__title{
-        color: #fff;
-    }
-    &__text{
-        color: #fefcf7;
-    }
-}
-
 .order{
     background-color: #2c343e;
     width: 100%;

@@ -323,6 +323,18 @@ li {
   background: #F4F1EB;
   border-radius: 8px;
 }
+.ways:hover {
+  background-color: #fdd6ba;
+}
+.ways:active {
+  background-color: #0e8784;
+}
+.ways:active .ways__title {
+  color: #fff;
+}
+.ways:active .ways__text {
+  color: #fefcf7;
+}
 .ways__box {
   margin: 35px auto 85px;
   width: 74%;
@@ -343,16 +355,6 @@ li {
   font-size: 16px;
   line-height: 26px;
   color: #333D4B;
-}
-
-.ways-2_2 {
-  background-color: #0e8784;
-}
-.ways-2_2__title {
-  color: #fff;
-}
-.ways-2_2__text {
-  color: #fefcf7;
 }
 
 .order {
