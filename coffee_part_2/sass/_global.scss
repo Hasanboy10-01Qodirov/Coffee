@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 90%;
+    margin: 50px auto;
+    background: #fefcf703;
+}
+.wrapper{
+    width: 100%;
+    margin: 50px auto;
+}
+@media only screen and (max-width: 1080px) {
+    .container{
+        width: 90%;
+        margin: 50px auto;
+    }
+    .wrapper{
+        width: 100%;
+        margin: 0 auto;
+    }
+}

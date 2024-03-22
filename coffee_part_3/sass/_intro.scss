@@ -29,3 +29,10 @@
         color: #FEFCF7;
     }
 }
+@media only screen and (max-width: 1080px) {
+    .intro{
+        margin-top: 55px;
+        border-radius: 9px;
+        background-position-x: -50%;
+    }
+}

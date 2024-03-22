@@ -1,0 +1,131 @@
+.works{
+    width: 90%;
+    margin: 385px 4% 0;
+}
+.works__title{
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+}
+.section{
+    margin-top: 80px;
+    width: 100%;
+}
+.section .box{
+    position: relative;
+    background-color: #fdd6ba;
+    height: 2.2px;
+    width: 70%;
+}
+.section .box .box__img{
+    position: absolute;
+    margin-top: -15px;
+}
+.section .box__img:nth-child(2){
+    margin-left: 50%;
+}
+.section .box__img:nth-child(3){
+    margin-left: 100%;
+}
+.section__article{
+    width: 98%;
+    margin-top: 90px;
+    display: flex;
+    gap: 95px;
+}
+.article__variant{
+    width: 100%;
+}
+.variant__img{
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;    
+    color: #FDD6BA;
+    margin-bottom: 40px;
+}
+.variant__title{
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+    margin-bottom: 45px;
+    width: 70%;
+}
+.variant__text{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}
+.works__btn{
+    margin-top: 70px;
+    background-color: #0E8784;
+    width: 217px;
+    height: 56px;
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FEFCF7;
+    border: none;
+    border-radius: 7px;
+    transition: all 0.3s;
+}
+.works__btn:hover{
+    transform: scale(1.042);
+    background: #65cac7;
+    cursor: pointer;
+}
+.works__btn:active{
+    transform: scale(0.895);
+}
+@media only screen and (max-width: 1080px) {
+    .works{
+        width: 90%;
+        margin: 400px 0 0;
+        &__title{
+            font-family: 'Fraunces 9pt';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 32px;
+            color: #83888F;
+        }
+        &__btn{
+            margin-top: 45px;
+            background-color: #0f6a69;
+            &:active{
+                transform: scale(0.92);
+                transition: all 0.3s linear;
+            }
+        }
+    }
+    .variant__title{
+        margin: 42px 0 32px;
+        width: 145%;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .variant__text{
+        width: 145%;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #333D4B;
+    }
+}

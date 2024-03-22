@@ -1,12 +1,3 @@
-.container{
-    width: 90%;
-    margin: 50px auto;
-    background: #fefcf703;
-}
-.wrapper{
-    width: 100%;
-    margin: 50px auto;
-}
 .navbar{
     display: flex;
     align-items: center;
@@ -26,30 +17,12 @@
         text-transform: uppercase;
         color: #83888F;  
     }
-    &__create{
+    &__about-us{
         color: #333d4b;
     }
     &__link:hover{
         cursor: pointer;
         color: #333D4B;
         transition: all 0.2s;
-    }
-}
-@media only screen and (max-width: 1080px) {
-    .container{
-        width: 90%;
-        margin: 50px auto;
-        
-        .wrapper{
-            width: 100%;
-            margin: 0 auto;
-        }
-    }
-    .navbar{
-        &__link:active{
-            cursor: pointer;
-            color: #333D4B;
-            transition: all 0.2s;
-        }
     }
 }
