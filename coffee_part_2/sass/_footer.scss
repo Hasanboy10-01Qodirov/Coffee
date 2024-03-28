@@ -42,23 +42,19 @@
         color: #fefcf7;
     }
     &__link:hover{
+        cursor: pointer;
         color: #fefcf7;
-        transition: all 0.2s; 
+        transition: all 0.3s; 
     }
 }
 .social__media{
-    margin-left: 5px;
+    margin-left: 20px;
 }
 @media only screen and (max-width: 1080px) {
     .footer{
         &__foter{
             flex-direction: column;
             align-items: center;
-        }
-        &__img-1{
-            width: 38%;
-            margin-top: 40px;
-            margin-left: -10px;
         }
     }
     .foter__img-1{
@@ -72,7 +68,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 0;
         &__list{
             gap: 33px;
         }
@@ -83,10 +78,59 @@
             line-height: 15px;
             letter-spacing: 0.923077px;
             text-transform: uppercase;
+            &:hover{
+                cursor: pointer;
+                color: #FEFCF7;
+                transition: all 0.3s;
+            }
+            &:active{
+                color: #FEFCF7;
+                transition: all 0.3s;
+            }
         }
     }
     .social{
-        margin: 0 0;
-        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        margin: 0 0 40px;
+        &__media{
+            margin: 0;
+        }
+    }
+}
+@media only screen and (max-width: 435px) {
+    .footer{
+        width: 100%;
+        margin: 120px auto 0;
+    }
+    .foter__img-1{
+        width: 218px;
+        height: 24px;
+        margin: 54px 0 0;
+    }
+    .navigation{
+        margin: 49px auto;
+        width: 40%;
+        &__list{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+        &__link{
+            &:active{
+                color: #FEFCF7;
+                transition: all 0.3s;
+            }
+        }
+    }
+    .social{
+        margin-bottom: 54px;
+        &__media{
+            margin: 0;
+            width: 24px;
+            height: 24px;
+        }
     }
 }

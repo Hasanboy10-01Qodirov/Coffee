@@ -33,12 +33,13 @@
         border-radius: 10px;
         background-image: url(./img=2/Bitmap.png);
         background-position-x: 100%;
-        
+        width: 100%;
         &__box{
             width: 60%;
             padding: 118px 58px;
         }
         &__title{
+            margin: 0;
             font-style: normal;
             font-weight: 900;
             font-size: 32px;
@@ -50,6 +51,31 @@
             font-weight: 400;
             font-size: 15px;
             line-height: 25px;
+            color: #FEFCF7;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+    }
+}
+@media only screen and (max-width: 435px) {
+    .intro{
+        width: 100%;
+        margin-top: 40px;
+        background-position-x: 92%;
+        &__box{
+            margin: 0 auto;
+            width: 80%;
+            padding: 111px 0 87px;
+        }
+        &__title{
+            font-size: 28px;
+            line-height: 28px;
+            text-align: center;
+        }
+        &__text{
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
             color: #FEFCF7;
             mix-blend-mode: normal;
             opacity: 0.8;

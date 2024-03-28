@@ -25,3 +25,13 @@ li{
         margin: 50px auto;
     }
 }
+@media only screen and (max-width: 435px) {
+    .container{
+        width: 90%;
+        margin: 30px auto;
+    }
+    .wrapper{
+        width: 90%;
+        margin: 30px auto;
+    }
+}

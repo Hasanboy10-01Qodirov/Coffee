@@ -6,55 +6,55 @@
     width: 100%;
     height: 600px;
     border-radius: 7px;
-}
-.intro__content{
-    padding: 117px 90px 0 90px;
-}
-.intro__title{
-    width: 50%;
-    font-family: 'Fraunces 9pt';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 72px;
-    line-height: 72px;
-    color: #FEFCF7;
-}
-.intro__text{
-    margin: 32px 0 56px;
-    width: 40%;
-    height: 78px;
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: #FEFCF7;
-    mix-blend-mode: normal;
-    opacity: 0.8;
-}
-.intro__btn{
-    background-color: #0E8784;
-    width: 217px;
-    height: 56px;
-    font-family: 'Fraunces 9pt';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    color: #FEFCF7;
-    border: none;
-    transition: all 0.3s;
-    border-radius: 7px;
-}
-.intro__btn:hover{
-    transform: scale(1.042);
-    background: #65cac7;
-    cursor: pointer;
-}
-.intro__btn:active{
-    transform: scale(0.9);
-    background: #1b4b4a;
+    &__content{
+        padding: 117px 90px 0 90px;
+    }
+    &__title{
+        width: 50%;
+        font-family: 'Fraunces 9pt';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 72px;
+        color: #FEFCF7;
+    }
+    &__text{
+        margin: 32px 0 56px;
+        width: 40%;
+        height: 78px;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FEFCF7;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+    &__btn{
+        background-color: #0E8784;
+        width: 217px;
+        height: 56px;
+        font-family: 'Fraunces 9pt';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #FEFCF7;
+        border: none;
+        transition: all 0.3s;
+        border-radius: 7px;
+        &:hover{
+            transform: scale(1.042);
+            background: #65cac7;
+            cursor: pointer;
+        }
+        &:active{
+            transform: scale(0.9);
+            background: #1b4b4a;
+        }
+    }
 }
 @media only screen and (max-width: 1080px){
     .intro{
@@ -74,22 +74,55 @@
             line-height: 25px;
         }
         &__btn{
-            background-color: #0E8784;
-            width: 217px;
-            height: 56px;
-            font-family: 'Fraunces 9pt';
+            transition: all 0.3s;
+            border-radius: 8px;
+            &:active{
+                background: #1b4b4a;
+                transform: scale(0.95);
+            }
+        }
+    }
+}
+@media only screen and (max-width: 435px) {
+    .intro{
+        margin-top: 40px;
+        background-position-x: 63%;
+        background-size: auto;
+        border-radius: 10px;
+        height: 501px;
+        &__content{
+            width: 85%;
+            margin: 0 auto;
+            padding: 100px 0 0;
+        }
+        &__title{
+            margin: 0;
+            width: 100%;
             font-style: normal;
             font-weight: 900;
-            font-size: 18px;
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+        &__text{
+            width: 100%;
+            margin: 25px 0 60px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
             line-height: 25px;
             text-align: center;
             color: #FEFCF7;
-            border: none;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+        &__btn{
+            margin: 0 0 0 12.5%;
             transition: all 0.3s;
-            border-radius: 7px;
-            &:active:not(.intro__btn:hover){
+            border-radius: 8px;
+            &:active{
                 background: #1b4b4a;
-                transform: scale(0.95);
+                transform: scale(0.97);
             }
         }
     }

@@ -52,3 +52,13 @@
     }
     
 }
+@media only screen and (max-width: 1080px) {
+    .list{
+        display: none;
+    }
+}
+@media only screen and (max-width: 435px) {
+    .list{
+        display: none;
+    }
+}

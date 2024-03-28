@@ -8,10 +8,10 @@
     padding: 110px 100px 130px;
     &__box{
         width: 40%;
-        // padding: 0 80px;
         border-radius: 8px;
     }
     &__title{
+        width: 100%;
         font-family: 'Fraunces 9pt';
         font-style: normal;
         font-weight: 900;
@@ -31,8 +31,61 @@
 }
 @media only screen and (max-width: 1080px) {
     .intro{
-        margin-top: 55px;
+        margin-top: 53px;
+        background-position-x: 42%;
+        background-size: auto;
+        padding: 127px 58px;
         border-radius: 9px;
-        background-position-x: -50%;
+        &__box{
+            width: 72%;
+        }
+        &__title{
+            font-style: normal;
+            font-weight: 900;
+            font-size: 48px;
+            line-height: 48px;
+        }
+        &__text{
+            margin-top: 24px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #FEFCF7;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+    }
+}
+@media only screen and (max-width: 435px) {
+    .intro{
+        background-position-x: 55%;
+        background-size: auto;
+        padding: 110px 25px 155px;
+        border-radius: 10px;
+
+        &__box{
+            width: 100%;
+        }
+        &__title{
+            width: 100%;
+            margin: 0 auto 22px;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #fefcf7;
+        }
+        &__text{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: #FEFCF7;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
     }
 }

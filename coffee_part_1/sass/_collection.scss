@@ -9,42 +9,42 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
-}
-.collection__title{
-    width: 250px;
-    text-align: center;
-    font-family: 'Fraunces 9pt';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
-    color: #333D4B;
-    margin-bottom: 20px;
-}
-.collection__text{
-    width: 255px;
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: #333D4B;
-}
-.collection__card{
-    width: 22%;
-    display: flex;
-    margin: 0 auto;
-    margin-top: 125px;
-    flex-direction: column;
-    align-items: center;
-    gap: 72px;
-}
-.collection__img{
-    width: 255px;
-    height: 193px;
-    flex-shrink: 0;
-    margin-bottom: 70px;
+    &__title{
+        width: 250px;
+        text-align: center;
+        font-family: 'Fraunces 9pt';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #333D4B;
+        margin-bottom: 20px;
+    }
+    &__text{
+        width: 255px;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #333D4B;
+    }
+    &__card{
+        width: 22%;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 125px;
+        flex-direction: column;
+        align-items: center;
+        gap: 72px;
+    }
+    &__img{
+        width: 255px;
+        height: 193px;
+        flex-shrink: 0;
+        margin-bottom: 70px;
+    }
 }
 @media only screen and (max-width: 1080px){
     .collection{
@@ -70,6 +70,35 @@
         }
         &__img{
             margin-bottom: 0;
+        }
+    }
+}
+@media only screen and (max-width: 435px) {
+    .collection{
+        margin-top: 120px;
+        width: 100%;
+        gap: 48px;
+        padding: 85px 0 0;
+        &__card{
+            margin: 0;
+            width: 100%;
+            flex-direction: column;
+            gap: 0;
+        }
+        &__title{
+            width: 100%;
+            text-align: center;
+            margin: 24px 0 16px;
+        }
+        &__text{
+            width: 85%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        &__img{
+            margin: 0;
+            width: 200px;
+            height: 151px;
         }
     }
 }

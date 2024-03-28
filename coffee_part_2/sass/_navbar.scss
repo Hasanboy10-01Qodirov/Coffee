@@ -15,7 +15,7 @@
         line-height: 15px;
         letter-spacing: 0.923077px;
         text-transform: uppercase;
-        color: #83888F;  
+        color: #83888F; 
     }
     &__about-us{
         color: #333d4b;
@@ -23,6 +23,50 @@
     &__link:hover{
         cursor: pointer;
         color: #333D4B;
-        transition: all 0.2s;
+        transition: all 0.3s;
+    }
+    &__burger{
+        display: none;
+        flex-direction: column;
+        gap: 3px;
+    }
+    &__hr{
+        border: none;
+        width: 16px;
+        height: 3px;
+        background-color: #000;
+        border-radius: 10px;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .navbar{
+        width: 100%;
+        &__link:hover{
+            color: #333D4B;
+            transition: all 0.3s;
+        }
+        &__link:active{
+            color: #333D4B;
+            transition: all 0.3s;
+        }
+    }
+}
+@media only screen and (max-width: 435px) {
+    .navbar{
+        width: 100%;
+        &__list{
+            display: none;
+        }
+        &__burger{
+            display: flex;
+        }
+        &__img{
+            width: 163px;
+            height: 18px;
+        }
+        &__link:active{
+            color: #333D4B;
+            transition: all 0.3s;
+        }
     }
 }

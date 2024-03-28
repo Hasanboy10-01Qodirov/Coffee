@@ -1,11 +1,11 @@
 .container{
     width: 90%;
-    margin: 50px auto;
+    margin: 50px auto 0;
     background: #fefcf703;
 }
 .wrapper{
     width: 100%;
-    margin: 50px auto;
+    margin: 50px auto 0;
 }
 .navbar{
     display: flex;
@@ -32,24 +32,65 @@
     &__link:hover{
         cursor: pointer;
         color: #333D4B;
-        transition: all 0.2s;
+        transition: all 0.3s;
+    }
+    &__burger{
+        display: none;
+        flex-direction: column;
+        gap: 3px;
+    }
+    &__hr{
+        border: none;
+        width: 16px;
+        height: 3px;
+        background-color: #000;
+        border-radius: 10px;
     }
 }
 @media only screen and (max-width: 1080px) {
     .container{
         width: 90%;
-        margin: 50px auto;
-        
-        .wrapper{
-            width: 100%;
-            margin: 0 auto;
-        }
+        margin: 40px auto 0;
+    }
+    .wrapper{
+        width: 95%;
+        margin: 40px auto 0;
     }
     .navbar{
-        &__link:active{
+        &__link:hover{
             cursor: pointer;
             color: #333D4B;
-            transition: all 0.2s;
+            transition: all 0.3s;
+        }
+        &__link:active{
+            color: #333D4B;
+            transition: all 0.3s;
+        }
+    }
+}
+@media only screen and (max-width: 435px) {
+    .container{
+        width: 90%;
+        margin: 30px auto 0;
+    }
+    .wrapper{
+        width: 90%;
+        margin: 30px auto 0;
+    }
+    .navbar{
+        &__list{
+            display: none;
+        }
+        &__burger{
+            display: flex;
+        }
+        &__img{
+            width: 163px;
+            height: 18px;
+        }
+        &__link:active{
+            color: #333D4B;
+            transition: all 0.3s;
         }
     }
 }

@@ -25,7 +25,6 @@
         gap: 35px;
     }
     &__link{
-        text-decoration: none;
         list-style: none;
         font-family: 'Barlow';
         font-style: normal;
@@ -37,8 +36,9 @@
         color: #83888F;
 
         &:hover{
+            cursor: pointer;
             color: #FEFCF7;
-            transition: all 0.2s;
+            transition: all 0.3s;
         }
     }
     &__plan{
@@ -47,4 +47,88 @@
 }
 .social__media{
     margin-left: 20px;
+}
+@media only screen and (max-width: 1080px) {
+    .footer{
+        margin-top: 145px;
+        width: 100%;
+        &__foooter{
+            padding: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__img{
+            width: 236px;
+            height: 26px;
+            margin: 62px 0 0;
+        }
+    }
+    .navigation{
+        margin: 32px 0 65px;
+        width: 50%;
+        &__list{
+            flex-direction: row;
+            justify-content: center;
+            gap: 33px;
+        }
+        &__link{
+            &:hover{
+                cursor: pointer;
+                color: #FEFCF7;
+                transition: all 0.3s;
+            }
+            &:active{
+                color: #FEFCF7;
+                transition: all 0.3s;
+            }
+        }
+    }
+    .social{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        margin-bottom: 54px;
+        &__media{
+            margin: 0;
+        }
+    }
+}
+@media only screen and (max-width: 435px) {
+    .footer{
+        margin-top: 120px;
+        width: 100%;
+        &__foooter{
+            padding: 0;
+            flex-direction: column;
+        }
+        &__img{
+            margin: 54px 0 0;
+            width: 218px;
+            height: 24px;
+        }
+    }
+    .navigation{
+        width: 40%;
+        margin: 49px 0;
+        &__list{
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+        &__link{
+            &:active{
+                color: #FEFCF7;
+                transition: all 0.3s;
+            }
+        }
+    }
+    .social{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        margin-bottom: 54px;
+        &__media{
+            margin: 0;
+        }
+    }
 }

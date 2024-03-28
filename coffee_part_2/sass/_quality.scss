@@ -83,3 +83,31 @@
         }
     }
 }
+@media only screen and (max-width: 435px) {
+    .quality{
+        margin: 198px auto 0;
+        width: 100%;
+        gap: 64px;
+        &__img2{
+            margin: -78px auto 0;
+            width: 85%;
+            height: 156px;
+            position: static;
+        }
+        &__box{
+            width: 85%;
+            margin: 0 auto 61px;
+            text-align: center;
+            padding: 0;
+        }
+        &__title{
+            margin: 0 auto;
+            font-size: 28px;
+            line-height: 28px;
+        }
+        &__text{
+            margin: 24px auto 0;
+            width: 100%;
+        }
+    }
+}
